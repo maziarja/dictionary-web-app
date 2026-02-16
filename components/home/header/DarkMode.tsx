@@ -29,9 +29,10 @@ function DarkMode() {
         checked={theme === "dark" || (theme === "system" && prefersDark)}
         onCheckedChange={handleSwitchDarkMode}
         id="dark-mode"
+        className="cursor-pointer"
       />
       <Label htmlFor="dark-mode">
-        <IconMoon />
+        <IconMoon className="stroke-muted dark:stroke-primary" />
       </Label>
     </div>
   );

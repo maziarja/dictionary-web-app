@@ -1,4 +1,4 @@
-function IconMoon() {
+function IconMoon({ className }: { className: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,8 +7,8 @@ function IconMoon() {
       viewBox="0 0 22 22"
     >
       <path
+        className={className}
         fill="none"
-        stroke="#838383"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"
