@@ -48,7 +48,8 @@ function Meaning({ meaning }: Props) {
                 key={`${synonym}-${i}`}
                 className="text-preset-5-mobile md:text-preset-3 text-accent font-bold"
               >
-                {synonym},
+                {synonym}
+                {i > 0 && i < meaning.synonyms.length - 1 && ","}
               </p>
             ))}
           </div>
