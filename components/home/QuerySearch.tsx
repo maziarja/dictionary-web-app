@@ -14,17 +14,18 @@ function QuerySearch() {
   const [error, setError] = useState<null | string>(null);
   const searchParams = useSearchParams();
   const router = useRouter();
+  const text = searchParams.get("text");
 
   function handleSubmitForm(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const query = formData.get("word") as string;
+    const text = formData.get("word") as string;
 
     const params = new URLSearchParams(searchParams);
-    if (query.trim()) {
-      params.set("query", query);
+    if (text.trim()) {
+      params.set("text", text);
     } else {
-      params.delete("query");
+      params.delete("text");
     }
 
     router.push(`?${params.toString()}`, { scroll: false });
@@ -33,8 +34,8 @@ function QuerySearch() {
   function handleOnChangeInput(
     e: React.ChangeEvent<HTMLInputElement, HTMLInputElement>,
   ) {
-    const query = e.target.value;
-    if (query.trim()) {
+    const text = e.target.value;
+    if (text.trim()) {
       setError(null);
     } else {
       setError("Whoops, can't be empty...");
@@ -48,7 +49,9 @@ function QuerySearch() {
           <InputGroupInput
             onChange={handleOnChangeInput}
             aria-invalid={error ? "true" : "false"}
-            className="text-preset-5-mobile font-bold"
+            className="text-preset-5-mobile md:text-preset-3 font-bold"
+            defaultValue={text || ""}
+            key={text}
             id="word"
             name="word"
             placeholder="Search for any word..."
