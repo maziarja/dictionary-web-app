@@ -257,7 +257,7 @@ html[data-font="mono"] .text-preset-7-regular {
   --border: var(--color-neutral-900);
   --input: var(--color-neutral-900);
   --ring: var(--color-neutral-950);
-  --separator: var(--color-neutral-200);
+  --separator: var(--color-neutral-700);
 
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
