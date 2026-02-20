@@ -224,7 +224,7 @@ html[data-font="mono"] .text-preset-7-regular {
   --destructive: var(--color-red-500);
   --border: var(--color-neutral-0);
   --input: var(--color-neutral-100);
-  --ring: var(--color-neutral-0);
+  --ring: var(--color-purple-500);
   --separator: var(--color-neutral-200);
 
   input:-webkit-autofill,
@@ -256,7 +256,7 @@ html[data-font="mono"] .text-preset-7-regular {
   --destructive: var(--color-red-500);
   --border: var(--color-neutral-900);
   --input: var(--color-neutral-900);
-  --ring: var(--color-neutral-950);
+  --ring: var(--color-purple-500);
   --separator: var(--color-neutral-700);
 
   input:-webkit-autofill,
