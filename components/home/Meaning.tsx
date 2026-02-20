@@ -1,5 +1,6 @@
 import { WordType } from "@/lib/schema/wordSchema";
 import { Separator } from "../ui/separator";
+import Synonyms from "./Synonyms";
 
 type Props = {
   meaning: WordType["meanings"][0];
@@ -43,15 +44,17 @@ function Meaning({ meaning }: Props) {
             Synonyms
           </p>
           <div className="flex flex-wrap items-center gap-x-1">
-            {meaning.synonyms.map((synonym, i) => (
-              <p
-                key={`${synonym}-${i}`}
-                className="text-preset-5-mobile md:text-preset-3 text-accent font-bold"
-              >
-                {synonym}
-                {i > 0 && i < meaning.synonyms.length - 1 && ","}
-              </p>
-            ))}
+            {meaning.synonyms.map((synonym, i) => {
+              const lastIndex = meaning.synonyms.length - 1;
+              return (
+                <Synonyms
+                  key={`${synonym}-${i}`}
+                  synonym={synonym}
+                  index={i}
+                  lastIndex={lastIndex}
+                />
+              );
+            })}
           </div>
         </div>
       )}
