@@ -57,7 +57,7 @@ function QuerySearch() {
             placeholder="Search for any word..."
           />
           <InputGroupAddon align="inline-end">
-            <button type="submit">
+            <button type="submit" aria-label="search">
               <IconSearch />
             </button>
           </InputGroupAddon>

@@ -7,7 +7,7 @@ import Link from "next/link";
 function Header() {
   return (
     <div className="flex items-center justify-between">
-      <Link href={"/"}>
+      <Link href={"/"} aria-label="back to home">
         <Logo />
       </Link>
       <div className="flex h-8 items-center gap-4 md:gap-6">
