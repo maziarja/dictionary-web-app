@@ -9,6 +9,7 @@ import {
 import IconSearch from "../ui/icon-search";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { Label } from "../ui/label";
 
 function QuerySearch() {
   const [error, setError] = useState<null | string>(null);
@@ -46,6 +47,9 @@ function QuerySearch() {
     <form onSubmit={handleSubmitForm}>
       <Field>
         <InputGroup>
+          <Label htmlFor="word" className="sr-only">
+            Search for any word
+          </Label>
           <InputGroupInput
             onChange={handleOnChangeInput}
             aria-invalid={error ? "true" : "false"}
