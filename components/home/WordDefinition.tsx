@@ -15,8 +15,8 @@ function WordDefinition({ word }: Props) {
         <Phonetics phonetics={word.phonetics} word={word.word} />
       </div>
       <div className="space-y-8 md:space-y-10">
-        {word.meanings.map((meaning) => (
-          <Meaning key={meaning.partOfSpeech} meaning={meaning} />
+        {word.meanings.map((meaning, i) => (
+          <Meaning key={`${meaning.partOfSpeech}-${i}`} meaning={meaning} />
         ))}
       </div>
       <Separator className="my-8 md:mt-12 md:mb-4" />
