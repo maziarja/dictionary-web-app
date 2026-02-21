@@ -56,6 +56,7 @@ function QuerySearch() {
             className="text-preset-5-mobile md:text-preset-3 font-bold"
             defaultValue={text || ""}
             key={text}
+            type="text"
             id="word"
             name="word"
             placeholder="Search for any word..."
