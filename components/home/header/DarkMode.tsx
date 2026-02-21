@@ -30,6 +30,7 @@ function DarkMode() {
         onCheckedChange={handleSwitchDarkMode}
         id="dark-mode"
         className="cursor-pointer"
+        aria-label="switch to dark mode"
       />
       <Label htmlFor="dark-mode">
         <IconMoon className="stroke-muted dark:stroke-primary" />
