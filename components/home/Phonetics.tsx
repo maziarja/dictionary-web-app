@@ -51,7 +51,7 @@ function Phonetics({ phonetics, word }: Props) {
   return (
     <div className="flex items-center justify-between">
       <div className="space-y-2">
-        <p className="text-preset-1-mobile md:text-preset-1">{word}</p>
+        <h1 className="text-preset-1-mobile md:text-preset-1">{word}</h1>
         <p className="text-preset-4 md:text-preset-2 text-accent">
           {phonetic?.text}
         </p>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="flex items-center justify-between">
+    <nav className="flex items-center justify-between">
       <Link href={"/"} aria-label="back to home">
         <Logo />
       </Link>
@@ -15,7 +15,7 @@ function Header() {
         <Separator orientation="vertical" />
         <DarkMode />
       </div>
-    </div>
+    </nav>
   );
 }
 

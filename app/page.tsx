@@ -20,7 +20,7 @@ async function Page({ searchParams }: Props) {
   const emptyState = "emptyState" in word;
 
   return (
-    <section className="mx-auto max-w-203.75 pb-16.5 md:pb-26.25">
+    <main className="mx-auto max-w-203.75 pb-16.5 md:pb-26.25">
       <div className="p-6 md:pt-14.5 md:pr-9.75 md:pb-14 md:pl-10">
         <Header />
       </div>
@@ -40,7 +40,7 @@ async function Page({ searchParams }: Props) {
           )}
         </>
       )}
-    </section>
+    </main>
   );
 }
 
