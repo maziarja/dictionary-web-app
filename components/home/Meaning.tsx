@@ -30,7 +30,7 @@ function Meaning({ meaning }: Props) {
                 </p>
                 {definition.example && (
                   <p className="text-preset-6-mobile md:text-preset-4 text-secondary-foreground">
-                    &rdquo;{definition.example}&ldquo;
+                    &ldquo;{definition.example}&rdquo;
                   </p>
                 )}
               </div>

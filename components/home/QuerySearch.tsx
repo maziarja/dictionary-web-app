@@ -17,23 +17,24 @@ function QuerySearch() {
   const router = useRouter();
   const text = searchParams.get("text");
 
-  function handleSubmitForm(e: React.SubmitEvent<HTMLFormElement>) {
+  function handleSubmitForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const text = formData.get("word") as string;
 
-    const params = new URLSearchParams(searchParams);
-    if (text.trim()) {
-      params.set("text", text);
-    } else {
-      params.delete("text");
+    if (!text.trim()) {
+      setError("Whoops, can't be empty...");
+      return;
     }
 
+    setError(null);
+    const params = new URLSearchParams(searchParams);
+    params.set("text", text);
     router.push(`?${params.toString()}`, { scroll: false });
   }
 
   function handleOnChangeInput(
-    e: React.ChangeEvent<HTMLInputElement, HTMLInputElement>,
+    e: React.ChangeEvent<HTMLInputElement>,
   ) {
     const text = e.target.value;
     if (text.trim()) {
