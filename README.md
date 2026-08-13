@@ -46,6 +46,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@maziarja](https://www.frontendmentor.io/profile/maziarja)
-- X - [@maz_alem](https://x.com/maz_alem)
 - LinkedIn - [@maziar-jamalialem](https://www.linkedin.com/in/maziar-jamalialem-677030345/)
 - Instagram - [@mazja_dev](https://www.instagram.com/mazja_dev/)
