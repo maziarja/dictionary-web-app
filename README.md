@@ -47,4 +47,4 @@ Users should be able to:
 
 - Frontend Mentor - [@maziarja](https://www.frontendmentor.io/profile/maziarja)
 - LinkedIn - [@maziar-jamalialem](https://www.linkedin.com/in/maziar-jamalialem-677030345/)
-- Instagram - [@mazja_dev](https://www.instagram.com/mazja_dev/)
+
