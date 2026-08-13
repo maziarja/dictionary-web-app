@@ -35,7 +35,6 @@ Users should be able to:
 ### Built with
 
 
-- CSS custom properties
 - CSS Grid
 - Mobile-first workflow
 - [Next.js](https://nextjs.org/) - React framework
